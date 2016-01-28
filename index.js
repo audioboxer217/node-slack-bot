@@ -1,5 +1,5 @@
 var Trello = require("node-trello");
-var t = new Trello("e272df0f25806536728cb3ae7866e76c", "b8426b924ba4516ebb87e21236aa015d432c881e38222efca91d11fefb01444f");
+var t = new Trello("e272df0f25806536728cb3ae7866e76c", "b24fd7b0fd7c8f02b7b27c914a83eac8a28ea2c6358e21bc83016cc1faeeca86");
 
 t.get("/1/members/me", function(err, data) {
   if (err) console.log(err);

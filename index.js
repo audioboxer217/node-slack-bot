@@ -1,3 +1,17 @@
+var Trello = require("node-trello");
+var t = new Trello("e272df0f25806536728cb3ae7866e76c", "b8426b924ba4516ebb87e21236aa015d432c881e38222efca91d11fefb01444f");
+
+t.get("/1/members/me", function(err, data) {
+  if (err) throw err;
+  console.log(data);
+});
+
+// URL arguments are passed in as an object.
+t.get("/1/members/me", { cards: "open" }, function(err, data) {
+  if (err) throw err;
+  console.log(data);
+});
+
 var Slack = require('slack-client')
 
 // Expect a SLACK_TOKEN environment variable

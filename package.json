@@ -22,7 +22,7 @@
   },
   "homepage": "https://github.com/audioboxer217/node-slack-bot#readme",
   "dependencies": {
-    "botkit": "0.2.0",
+    "botkit": "0.2.1",
     "node-trello": "^1.1.2"
   }
 }
